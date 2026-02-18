@@ -2,7 +2,7 @@
 title: "Exercise 01"
 subtitle: "Coding basics and exploring `sf` objects"
 order: 1
-status: available
+status: completed
 date-modified: last-modified
 error: true
 ---
