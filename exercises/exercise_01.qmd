@@ -55,32 +55,34 @@ There are periodic reminders in this assignment to remind you to **render, commi
 
 *The exercises in this section are from [Ch. 3 Workflow: basics](https://r4ds.hadley.nz/workflow-basics.html) in R for Data Science (2e). If you have any trouble with the next couple exercises, please review the chapter before continuing to the next section.*
 
-Why does this code not work? ____
+Why does this code not work? The i on the second line did not match the exact one used in the first so R did not understand they were supposed to be talking about the same variable.
 
 ```{r}
 my_variable <- 10
-my_varıable
+my_variable
 ```
+
 
 ------------------------------------------------------------------------
 
 Tweak each of the following R commands so that they run correctly:
 
 ```{r}
-libary(todyverse)
+library(tidyverse)
 
-ggplot(dTA = mpg) +
-  geom_point(maping = aes(x = displ y = hwy)) +
-  geom_smooth(method = "lm)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  geom_smooth(aes(x = displ, y = hwy),method = "lm")
 ```
 
 ------------------------------------------------------------------------
 
 Press <kbd>⌥ + ⇧ + K</kbd> or <kbd>⎇ + ⇧ + K</kbd>.
 
-What happens? ____
+What happens? Opens up a panel for some cheat sheets within R for keyboard shortcuts.
 
-How can you get to the same place using the menus? ____
+
+How can you get to the same place using the menus? Using the Help dropdown on the top ribbon and selecting keyboard shortcuts help.
 
 ------------------------------------------------------------------------
 
